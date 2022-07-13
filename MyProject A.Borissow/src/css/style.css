@@ -1,0 +1,644 @@
+.html{
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    font-family: Tahoma, sans-serif;
+}
+
+nav {
+    width: 100%;
+    overflow: hidden;
+    height: 60px;
+    background: #3D639C;
+    position: fixed;
+
+}
+
+.logo {
+    color: #FAFEFF;
+    display: block;
+    font-size: 28px;
+    text-shadow: 1px 1px 1px black;
+    line-height: 60px;
+    padding-left: 370px;
+    float: left;
+    -webkit-animation: ease comming 5s;
+    -o-animation: ease comming 5s;
+    animation: ease comming 5s;
+
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+}
+
+.menu {
+    float: left;
+    overflow: hidden;
+    padding-left: 432px;
+    display: block;
+
+
+}
+
+
+.menu li {
+
+    float: left;
+    
+    line-height: 60px;
+    color: #FAFEFF;
+    margin-right: 40px;
+    font-size: 16px;
+    opacity: 0;
+    -webkit-animation: menushift 0.4s ease forwards;
+    -o-animation: menushift 0.4s ease forwards;
+    animation: menushift 0.4s ease forwards;
+
+
+}
+
+.menu li a {
+    transition: all 0.7s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.menu li a:visited {
+    color: white;
+
+}
+
+.menu li a:hover {
+    color: yellow;
+
+}
+
+.menu li a:active {
+    transform: scale(1.3);
+}
+
+.title_container input {
+    transition: all 0.3s;
+
+}
+
+
+
+.main {
+    width: 100%;
+    height: 100%;
+    background: url(../img/me.png) 78% 1%/auto 40% no-repeat, url(../img/background.jpg) center/cover no-repeat;
+
+
+}
+
+.title_container input {
+
+    transition: all 1s;
+    transform: scale(1);
+}
+
+.title_container input:hover {
+
+    background: #557CB5;
+    text-shadow: 1px 1px 1px black;
+    transform: scale(1.4);
+}
+
+.title_container {
+    display: block;
+    float: left;
+    margin: 220px 50px 50px 170px;
+    color: #FAFEFF;
+    text-align: center;
+    opacity: 0;
+    -webkit-animation: titlemove ease 2s forwards;
+    -o-animation: titlemove ease 2s forwards;
+    animation: titlemove ease 2s forwards;
+    -webkit-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.title_container h1 {
+    font-size: 80px;
+    font-weight: 400;
+    text-shadow: 3px 3px 3px #557CB5;
+
+}
+
+.title_container h4 {
+    margin-top: 25px;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px #000
+}
+
+.title_container input {
+    text-shadow: 1px 1px 1px black;
+    height: 25px;
+    text-align: center;
+    border: 2px solid #FAFEFF;
+    background: none;
+    border-radius: 3px;
+    color: #FAFEFF;
+    font-size: 17px;
+    padding: 0px 12px;
+    margin: 25px 12px 0px 14px;
+
+}
+
+@keyframes comming {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes menushift {
+    from {
+        opacity: 0;
+        margin-top: -80px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+.menu li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.menu li:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+.menu li:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+.menu li:nth-child(5) {
+    animation-delay: 1.6s;
+}
+
+.menu li:nth-child(6) {
+    animation-delay: 2.0s;
+}
+
+@keyframes titlemove {
+    from {
+        opacity: 0;
+        margin-left: -500px;
+    }
+
+    to {
+        margin-left: 170px;
+        opacity: 1;
+    }
+}
+
+.myinfo {
+    width: 100%;
+    height: 500px;
+    background: url(../img/bg2.jpg) center/cover no-repeat;
+
+}
+
+.myinfo h2 {
+    font-size: 65px;
+    text-shadow: 2px 2px 2px #000CA5;
+    float: center;
+    color: #FAFEFF;
+    text-align: center;
+    padding-top: 50px;
+    text-decoration: underline 5px #FAFEFF;
+
+}
+
+.myinfo p {
+    color: #FAFEFF;
+    display: block;
+    background: black;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #000CA5;
+    border: 2px solid #FAFEFF;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #000CA5;
+    padding: 20px 20px 20px 20px;
+    margin: 70px 70px 70px 70px;
+    -webkit-animation: myinfotext 3s ease;
+    -o-animation: myinfotext 3s ease;;
+    animation: myinfotext 3s ease;;
+
+
+}
+
+@keyframes myinfotext{
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+    } 
+}
+.myinfo a{
+    display: block;
+    opacity: 0;
+    text-transform: uppercase;
+    color: #FAFEFF;
+    width: 162px;
+    height: 33px;
+    text-align: center;
+    border: 1px solid #FAFEFF;
+    border-radius: 8px;
+    line-height: 25px;
+    margin: 40px auto 0;
+    font-size: 16px;
+    background: black;
+    padding-top: 2px;
+    -webkit-animation: downloadresume 3s ease forwards;
+    -o-animation: downloadresume 3s ease forwards;
+    animation: downloadresume 3s ease forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+@keyframes downloadresume{
+    from{
+        margin-right: -180px;
+        opacity: 0;
+    }
+    to{
+        margin-right: 700px;
+        opacity: 1;
+    }
+    
+}
+.skills {
+    width: 100%;
+    height: 600px;
+    background: url(../img/bgskills.jpg) center/cover no-repeat;
+    
+
+
+}
+
+.skills h2 {
+    font-size: 50px;
+    text-shadow: 2px 3px 3px black;
+    float: center;
+    padding: 15px 15px 15px 15px;
+    margin: 15px 549px 15px 549px;
+    color: #fff;
+    text-align: center;
+    border: 5px solid white;
+    border-radius: 25px;
+    background: #557CB5;
+}
+
+.skills{
+    font-size: 15px;
+    color: white;
+    text-shadow: 1px 1px 1px #557CB5;
+    padding: 20px 20px 20px 20px;
+
+
+}
+
+.skillsitem{
+    float: left;
+    
+}
+
+.skillsitem h3{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    text-shadow: 1px 1px 1px #557CB5;
+    max-width: 350px;
+    padding-top: 100px;
+    padding-left: 25px;
+    padding-bottom: 50px;
+    
+}
+
+.skillsitem p{
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    margin: 15px 5px 15px 25px;
+    padding: 15px 15px 15px 15px;
+    max-width: 350px;
+}
+
+.skillsitem p{
+    transition: all 1s;
+    transform: scale(1);
+}
+
+.skillsitem p:hover{
+    background: #557CB5;
+    text-shadow: 1px 1px 1px black;
+    transform: scale(1.17);
+    z-index: 10;
+}
+
+.cases {
+    width: 100%;
+    height: 100%;
+    background: url(../img/bgcases.jpg) center/cover no-repeat;
+
+
+}
+
+.cases h2 {
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #557CB5;
+    color: white;
+    padding-top: 40px;
+
+}
+
+.cases p {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+
+
+}
+
+.caseinfo{
+    float: right;
+    text-align: center;
+    max-width: 300px;
+    padding: 5px 5px 5px 5px;
+}
+.caseinfo h3 {
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #000;
+    color: white;
+    margin-top: 180px;
+
+
+
+}
+
+.caseinfo p {
+    font-size: 15px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border: 1px solid white;
+    margin-top: 15px;
+}
+
+.calculator{
+    padding-bottom: 84px;
+    background: url(../img/bgpay.jpg);
+    height: 700px;
+
+}
+
+.calculator_container h2{
+    text-align: center;
+    color: white;
+    width: 498px;
+    text-shadow: 1px 1px 1px #557CB5;
+    font-size: 50px;
+    margin: 0px auto 50px;
+    
+}
+.calculator_inner{
+    width: 890px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.calculator_inner h3{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.calculator_inner select{
+    margin-bottom: 44px;
+}
+
+.calculator_inner hr{
+    height: 2px;
+    border: none;
+    background: ##557CB5;
+    width: 100%;
+    margin: 0 auto 24px;
+}
+
+.mySelect{
+    display: block;
+    width: 500px;
+    height: 54px;
+    background: #eeeeee;
+    margin-left: 200px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background:  #557CB5;
+}
+
+.days, .price{
+    margin-bottom: 18px;
+    font-size: 21px;
+    
+}
+
+.calculator_footer .text{
+    font-size: 26px;
+    color: white;
+    text-shadow: 1px 1px 1px #557CB5;
+    padding-left: 600px;
+    float: left;
+}
+
+.calculator_footer .digit{
+    font-size: 26px;
+    color: white;
+    text-shadow: 1px 1px 1px #557CB5;
+    padding-left: 600px;
+    float: right;
+}
+
+.paralax {
+    
+    height: 100%;
+    background: url(../img/bgstatistic.jpg) center/cover no-repeat;
+    background-attachment: fixed;
+
+
+
+}
+
+.statistic h2 {
+    font-size: 50px;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 280px;
+    text-shadow: 1px 1px 1px #557CB5;
+    text-align: center;
+
+
+}
+
+.statistic li {
+    color: white;
+    text-shadow: 1px 1px 1px #557CB5;
+    font-size: 25px;
+    line-height: 30px;
+    float: left;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    margin: 100px 10px 10px 100px;
+
+
+}
+
+.statistic h3 {
+    
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    padding-top: 190px;
+
+
+}
+
+.statistic p {
+    font-size: 15px;
+    color: white;
+    text-shadow: 1px 1px 1px #557CB5;
+    border: 1px solid white;
+    margin: 20px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+
+
+
+}
+
+.contact {
+    width: 100%;
+    height: 100%;
+    background: black;
+padding-left: 300px;
+
+
+}
+
+.contacts_container{
+    width: 700px;
+    height: 750px;
+}
+
+.contact h2 {
+    font-size: 40px;
+    color: white;
+    padding: 10px 10px 10px 1px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+
+
+
+}
+
+.contact p {
+    font-size: 20px;
+    width: 500px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border: 1px solid white;
+    margin: 20px 20px 20px 120px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+
+}
+
+.contact ul {
+    color: white;
+    text-shadow: 1px 1px 1px #557CB5;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 120px;
+}
+.contact li{
+    margin-top: 5px;
+}
+
+
+.contact h3 {
+    font-size: 30px;
+    color: white;
+    padding: 100px 10px 10px 50px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+
+.contactsinput input {
+    display: block;
+    width: 300px;
+    float: left;
+    color: black;
+    margin-top: 10px;
+    margin-left: 50px;
+    height: 22px;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid #557CB5;
+}
+
+.contactsinput .secondinput{
+    float: right;
+}
+
+.contacts_container textarea{
+    width: 650px;
+    resize: none;
+    margin-top: 10px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 50px;
+    font-size: 12px;
+    color: black;
+}
+
+.contacts_container input[type="submit"]{
+    font-size: 20px;
+    border: 2px solid #557CB5;
+    border-radius: 5px;
+    width: 120px;
+    margin-left: 310px;
+    margin-top: 10px;
+    
+    
+}
+    
+    
+.loader{
+    width: 100%;
+    height: 100%;
+    background: url(../img/loader.png) 50% 50%/auto 20% no-repeat, white;
+}
